@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <title>Patient - Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background: url("Images/background.jpg");
+          background-size: cover;
+        }
+        
+        .registration-container {
+          width: 500px;
+          margin: 100px auto;
+          padding: 20px;
+          background-color: #eadada;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .form-group {
+          margin-bottom: 15px;
+        }
+    
+        .form-group label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+    
+        .form-group input {
+          width: 100%;
+          padding: 8px;
+          box-sizing: border-box;
+        }
+    
+        .form-group button {
+          background-color: #4caf50;
+          color: #fff;
+          border: none;
+          padding: 10px;
+          cursor: pointer;
+          width: 100%;
+        }
+    
+        .login-link {
+          text-align: center;
+          margin-top: 15px;
+        }
+    </style>
+
+    <div class="registration-container">
+        <h2>Registration</h2>
+        <form action="signup.php" method="POST">
+            <div class="form-group">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Enter your First Name" required>
+            </div>
+            <div class="form-group">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Enter your Last Name" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile_no">Mobile No:</label>
+                <input type="text" id="mobile_no" name="mobile_no" placeholder="Enter your Mobile No" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email ID" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+        <div class="login-link">
+            Already have an account? <a href="plogin.html">Login</a>
+        </div>
+    </div>
+
+</body>
+</html>
